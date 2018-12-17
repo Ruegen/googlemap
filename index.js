@@ -52,7 +52,7 @@ function renderMap() {
             const {title, mag, time} = feature.properties
             const date = (new Date(time)).toDateString()
 
-            const [lat, lng] = feature.geometry.coordinates
+            const [lng, lat] = feature.geometry.coordinates
 
             const marker = new google.maps.Marker({
                 position: new google.maps.LatLng(lat, lng),
